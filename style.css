@@ -1,0 +1,118 @@
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 101vh;
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: #0e0e0e;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    margin: 4.8em auto;
+    background: url(images/pattern-hills.svg) bottom center no-repeat, url(images/bg-stars.svg) no-repeat, linear-gradient(180deg, #1d1e28 0.12%, #231d2b 67.73%, #261c2d 94.84%, #261a2d 100%);
+    background-size: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: min(49.14em, 100%);
+    gap: 2.286em;
+    margin-top: 7.50em;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10.571em;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.730em;
+    width: 100%;
+    font-size: 5.8rem;
+    letter-spacing: -2.4px;
+    color:  hsl(345, 95%, 68%);
+    border-radius: .1em;
+    box-shadow: 0 10px 0 0 hsl(234, 17%, 12%);
+    background: linear-gradient(hsl(235, 21%, 21%) 50%, hsla(236, 21%, 26%, 1) 50% );
+    position: relative;
+}
+
+.heading {
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    margin-top: 6.45em;
+    font-size: 1.5rem;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 2.3em;
+    margin-top: 18em;
+}
+
+.fa-brands {
+    color: hsl(237,18%,59%);
+    font-size: 1.9em;
+}
+.fa-brands:hover {
+    color: hsl(345, 95%, 68%);
+}
+
+.title {
+    color: hsl(237,18%,59%);
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: .5em;
+    margin-top: 2em;
+}
+
+.card::after {
+    
+    content: "";
+    background: hsl(234, 17%, 12%);
+    height: 11px;
+    width: 7px;
+    border-radius: 0 50px 50px 0;
+    position: absolute;
+    left: 0;
+    top: 46%;
+
+}
+
+.card::before {
+    position: absolute;
+    content: "";
+    background: hsl(234, 17%, 12%);
+    height: 11px;
+    width: 7px;
+    border-radius:  50px 0 0 50px  ;
+    left: 95%;
+    top: 46%;
+}
