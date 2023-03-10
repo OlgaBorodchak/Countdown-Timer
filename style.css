@@ -16,26 +16,29 @@ body {
     justify-content: space-between;
     height: 101vh;
     font-family: 'Red Hat Text', sans-serif;
-    background-color: #0e0e0e;
+    background-color: hsl(0, 0%, 5%);
 }
 
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
     max-width: 1440px;
     margin: 4.8em auto;
-    background: url(images/pattern-hills.svg) bottom center no-repeat, url(images/bg-stars.svg) no-repeat, linear-gradient(180deg, #1d1e28 0.12%, #231d2b 67.73%, #261c2d 94.84%, #261a2d 100%);
+    background: url(images/pattern-hills.svg) bottom center no-repeat, 
+                url(images/bg-stars.svg) no-repeat;
     background-size: 100%;
+    background-color: hsl(266,19%,14%);
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: min(49.14em, 100%);
-    gap: 2.286em;
+    gap: clamp(1.143rem, 0.7405rem + 1.7172vw, 2.286rem);
     margin-top: 7.50em;
 }
 
@@ -53,8 +56,8 @@ main {
     align-items: center;
     height: 1.730em;
     width: 100%;
-    font-size: 5.8rem;
-    letter-spacing: -2.4px;
+    font-size: clamp(2.571rem, 1.4643rem + 4.7219vw, 5.714rem); 
+    letter-spacing: -0.171rem;
     color:  hsl(345, 95%, 68%);
     border-radius: .1em;
     box-shadow: 0 10px 0 0 hsl(234, 17%, 12%);
@@ -65,9 +68,10 @@ main {
 .heading {
     color: hsl(0, 0%, 100%);
     text-transform: uppercase;
-    letter-spacing: .4em;
-    margin-top: 6.45em;
-    font-size: 1.5rem;
+    letter-spacing: .536rem;
+    margin-top: 3em;
+    font-size: clamp(1.286rem, 1.1856rem + 0.4282vw, 1.571rem);
+    text-align: center;
 }
 
 .social-media-icons {
@@ -87,14 +91,13 @@ main {
 .title {
     color: hsl(237,18%,59%);
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 0.3239rem + 0.7512vw, 1rem);
     text-align: center;
-    letter-spacing: .5em;
-    margin-top: 2em;
+    letter-spacing: 0.423rem;
+    margin-top: 1.8em;
 }
 
 .card::after {
-    
     content: "";
     background: hsl(234, 17%, 12%);
     height: 11px;
@@ -115,4 +118,57 @@ main {
     border-radius:  50px 0 0 50px  ;
     left: 95%;
     top: 46%;
+}
+
+
+@media all and (max-width: 1440px) {
+    main {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 800px) {
+    main {
+        background-size: auto 25vh, cover;
+        background-position: bottom right 20%, bottom;
+    }
+
+    .container {
+        margin-top: 3.8em;
+        padding-left: 1.8em;
+        padding-right: 1.8em;
+    }
+
+    .card::after {
+        height: 6px;
+        width: 4px;
+        left: 0;
+        top: 45%;
+    }
+    
+    .card::before {
+        height: 6px;
+        width: 4px;
+        border-radius:  50px 0 0 50px  ;
+        left: 92.5%;
+        top: 45%;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .heading {
+        margin-top: 6em;
+    }
+
+    .card-container {
+        width: 5em;
+    }
+
+    .card {
+        height: 66.27px;
+    }
+
+    .title {
+        letter-spacing: 0.211rem;
+    }
 }
