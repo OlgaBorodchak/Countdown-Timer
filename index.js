@@ -21,13 +21,13 @@ function countdown() {
         document.querySelector("#days").textContent = displayDay;
     }
 
-    if (displayHour < 9) {
+    if (displayHour <= 9) {
         document.querySelector("#hours").textContent = `0${displayHour}`;
     } else {
         document.querySelector("#hours").textContent = displayHour;
     }
 
-    if (displayMinute < 9) {
+    if (displayMinute <= 9) {
         document.querySelector("#minutes").textContent = `0${displayMinute}`;
     } else {
         document.querySelector("#minutes").textContent = displayMinute;
