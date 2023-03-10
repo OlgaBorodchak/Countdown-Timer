@@ -1,4 +1,4 @@
-const countToDate = new Date().getTime() + 8 * 1000 * 60 * 60 * 24;
+const countToDate = new Date().getTime() + 14 * 24 * 60 * 60 * 1000;
 
 function countdown() {
     const today = new Date().getTime();
@@ -15,10 +15,29 @@ function countdown() {
     const displaySecond = Math.floor((remainingTime%msInMinute) / msInSecond);
 
 
-    document.querySelector("#days").textContent = displayDay;
-    document.querySelector("#hours").textContent = displayHour;
-    document.querySelector("#minutes").textContent = displayMinute;
-    document.querySelector("#seconds").textContent = displaySecond;
+    if (displayDay <= 9) {        
+        document.querySelector("#days").textContent = `0${displayDay}`;
+    } else {
+        document.querySelector("#days").textContent = displayDay;
+    }
+
+    if (displayHour < 9) {
+        document.querySelector("#hours").textContent = `0${displayHour}`;
+    } else {
+        document.querySelector("#hours").textContent = displayHour;
+    }
+
+    if (displayMinute < 9) {
+        document.querySelector("#minutes").textContent = `0${displayMinute}`;
+    } else {
+        document.querySelector("#minutes").textContent = displayMinute;
+    }
+
+    if (displaySecond <= 9) {
+        document.querySelector("#seconds").textContent = `0${displaySecond}`;
+    } else {
+        document.querySelector("#seconds").textContent = displaySecond;
+    }
 
     if (remainingTime <= 0 ) {
         document.querySelector("#days").textContent = 0;
