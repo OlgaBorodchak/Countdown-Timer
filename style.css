@@ -153,6 +153,10 @@ main {
         left: 92.5%;
         top: 45%;
     }
+    
+    .card {
+        box-shadow: 0 5px 0 0 hsl(234, 17%, 12%);
+    }
 }
 
 @media all and (max-width: 375px) {
