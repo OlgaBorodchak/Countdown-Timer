@@ -78,12 +78,11 @@ main {
     margin-top: 18em;
 }
 
-.fa-brands {
-    color: hsl(237,18%,59%);
-    font-size: 1.9em;
+.icon {
+    fill: #8385A9;
 }
-.fa-brands:hover {
-    color: hsl(345, 95%, 68%);
+.icon:hover {
+    fill: hsl(345, 95%, 68%);
 }
 
 .title {
