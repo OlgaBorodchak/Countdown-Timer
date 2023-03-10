@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [[Add solution URL here](https://github.com/OlgaBorodchak/Countdown-Timer.git)](https://your-solution-url.com)
-- Live Site URL: [[Add live site URL here](https://olgaborodchak.github.io/Countdown-Timer/)](https://your-live-site-url.com)
+- Solution URL: [(https://github.com/OlgaBorodchak/Countdown-Timer.git)](https://your-solution-url.com)
+- Live Site URL: [(https://olgaborodchak.github.io/Countdown-Timer/)](https://your-live-site-url.com)
 
 ### Built with
 
