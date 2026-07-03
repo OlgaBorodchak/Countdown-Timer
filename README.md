@@ -8,8 +8,8 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [(https://github.com/OlgaBorodchak/Countdown-Timer.git)](https://your-solution-url.com)
-- Live Site URL: [(https://olgaborodchak.github.io/Countdown-Timer/)](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/OlgaBorodchak/Countdown-Timer)
+- Live Site URL: [Live Site](https://olgaborodchak.github.io/Countdown-Timer/)
 
 ### Built with
 
