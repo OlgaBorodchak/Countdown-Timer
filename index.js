@@ -1,6 +1,7 @@
 const countToDate = new Date().getTime() + 14 * 24 * 60 * 60 * 1000;
 
 function countdown() {
+    let timer = setInterval(countdown, 1000);
     const today = new Date().getTime();
     const remainingTime = countToDate - today;
 
